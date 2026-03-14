@@ -156,39 +156,42 @@ export default function CVPage() {
               <Briefcase className="w-5 h-5" />
               <h2 className="text-xl font-bold border-l-4 border-blue-800 pl-2 leading-none italic uppercase tracking-tighter">Experiencia</h2>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-3.5">
               <div>
                 <div className="flex justify-between items-start mb-0.5">
-                  <h3 className="font-bold text-slate-800 uppercase tracking-tight text-sm">Lead Developer @ Proyecto GallerySync</h3>
-                  <span className="text-[10px] font-bold text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded">2024 - 2025</span>
+                  <h3 className="font-bold text-slate-800 uppercase tracking-tight text-[13px]">Lead Developer @ Proyecto GallerySync</h3>
+                  <span className="text-[9px] font-bold text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded">2024 - 2025</span>
                 </div>
-                <ul className="text-[11px] text-slate-600 space-y-0.5 italic list-none">
-                  <li className="flex gap-2"><span>•</span> Desarrollo de PWA modular escalable utilizando Node.js y arquitectura de 'clusters'.</li>
-                  <li className="flex gap-2"><span>•</span> Implementación de Worker Threads para procesamiento intensivo de archivos multimedia.</li>
-                  <li className="flex gap-2"><span>•</span> Diseño de una arquitectura offline-first con alta eficiencia en el consumo de datos.</li>
+                <ul className="text-[10.5px] text-slate-600 space-y-0.5 italic list-none">
+                  <li className="flex gap-2"><span>•</span> Arquitectura robusta: Desarrollo de PWA modular utilizando **Node.js** y clusters para alta disponibilidad.</li>
+                  <li className="flex gap-2"><span>•</span> Rendimiento extremo: Implementación de **Worker Threads** para procesamiento paralelo de archivos multimedia.</li>
+                  <li className="flex gap-2"><span>•</span> Estrategia de datos: Diseño offline-first con sincronización inteligente y caché optimizada (Service Workers).</li>
+                  <li className="flex gap-2"><span>•</span> Integración continua: Despliegue automatizado y testing de integración para flujos de usuario críticos.</li>
                 </ul>
               </div>
 
               <div>
                 <div className="flex justify-between items-start mb-0.5">
-                  <h3 className="font-bold text-slate-800 uppercase tracking-tight text-sm">Full Stack Specialist @ Proyecto IoT</h3>
-                  <span className="text-[10px] font-bold text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">2023 - 2024</span>
+                  <h3 className="font-bold text-slate-800 uppercase tracking-tight text-[13px]">Full Stack Specialist @ Proyecto IoT Firebase</h3>
+                  <span className="text-[9px] font-bold text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">2023 - 2024</span>
                 </div>
-                <ul className="text-[11px] text-slate-600 space-y-0.5 italic list-none">
-                  <li className="flex gap-2"><span>•</span> Creación de ecosistema de monitoreo remoto con ESP32 y MicroPython.</li>
-                  <li className="flex gap-2"><span>•</span> Integración de conectividad GPRS/GSM y streaming hacia bases de datos Firebase.</li>
-                  <li className="flex gap-2"><span>•</span> Desarrollo de interfaces de control reactivas para visualización de sensores.</li>
+                <ul className="text-[10.5px] text-slate-600 space-y-0.5 italic list-none">
+                  <li className="flex gap-2"><span>•</span> Ecosistema IoT: Monitoreo con **ESP32 y MicroPython**, procesando señales de sensores industriales (GPRS/GSM).</li>
+                  <li className="flex gap-2"><span>•</span> Tiempo Real: Streaming de datos bidireccional hacia **Firebase Realtime Database** con latencia menor a 2s.</li>
+                  <li className="flex gap-2"><span>•</span> Visualización: Dashboard reactivo con **Angular** para visualización de métricas críticas y control remoto.</li>
+                  <li className="flex gap-2"><span>•</span> Eficiencia energética: Optimización de deep-sleep y gestión de energía para nodos IoT aislados.</li>
                 </ul>
               </div>
 
               <div>
                 <div className="flex justify-between items-start mb-0.5">
-                  <h3 className="font-bold text-slate-800 uppercase tracking-tight text-sm">Independent Software Engineer</h3>
-                  <span className="text-[10px] font-bold text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">2022 - 2023</span>
+                  <h3 className="font-bold text-slate-800 uppercase tracking-tight text-[13px]">Independent Software Engineer</h3>
+                  <span className="text-[9px] font-bold text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">2022 - 2023</span>
                 </div>
-                <ul className="text-[11px] text-slate-600 space-y-0.5 italic list-none">
-                  <li className="flex gap-2"><span>•</span> Contenedorización avanzada con Docker y despliegue en infraestructuras AWS.</li>
-                  <li className="flex gap-2"><span>•</span> Desarrollo de backends de alto rendimiento para e-commerce y blogs técnicos.</li>
+                <ul className="text-[10.5px] text-slate-600 space-y-0.5 italic list-none">
+                  <li className="flex gap-2"><span>•</span> Backend High-Performance: Desarrollo de microservicios en **Go y FastAPI** con alta concurrencia.</li>
+                  <li className="flex gap-2"><span>•</span> Infraestructura: Contenedorización avanzada con **Docker** y orquestación base para ambientes AWS.</li>
+                  <li className="flex gap-2"><span>•</span> E-commerce: APIs escalables con integración de Cloudinary para gestión de activos digitales.</li>
                 </ul>
               </div>
             </div>
