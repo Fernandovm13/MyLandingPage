@@ -56,7 +56,7 @@ export function Hero() {
             className="text-muted-foreground hover:text-foreground"
             asChild
           >
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">
               <FileText className="mr-2 h-4 w-4" />
               Descargar CV
             </a>

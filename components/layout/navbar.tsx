@@ -54,7 +54,7 @@ export function Navbar() {
             </a>
           ))}
           <Button variant="outline" size="sm" className="ml-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="cv.pdf" target="_blank" rel="noopener noreferrer">
               Currículum
             </a>
           </Button>
