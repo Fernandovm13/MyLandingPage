@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Folder } from "lucide-react"
+import { getAssetPath } from "@/lib/utils"
 
 const projects = [
   {
@@ -124,7 +125,7 @@ export function Projects() {
               >
                 <div className="relative aspect-video bg-secondary rounded-lg overflow-hidden border border-border">
                   <img 
-                    src={project.image} 
+                    src={getAssetPath(project.image || "")} 
                     alt={project.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => (e.currentTarget.style.display = 'none')}

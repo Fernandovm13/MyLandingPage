@@ -1,3 +1,5 @@
+import { getAssetPath } from "@/lib/utils"
+
 export function About() {
   return (
     <section id="about" className="py-20 px-6 lg:px-8">
@@ -10,7 +12,7 @@ export function About() {
               <div className="absolute inset-0 bg-card border border-border rounded-lg transform -rotate-3" />
               <div className="relative bg-secondary rounded-lg overflow-hidden aspect-square flex items-center justify-center">
                 <img 
-                  src="/assets/projects/profile.jpg" 
+                  src={getAssetPath("/assets/projects/profile.jpg")} 
                   alt="Fernando Vélez Méndez"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
