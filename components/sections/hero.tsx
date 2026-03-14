@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowDown, FileText, Mail } from "lucide-react"
+import Link from "next/link"
 import { getAssetPath } from "@/lib/utils"
 
 export function Hero() {
@@ -57,10 +58,10 @@ export function Hero() {
             className="text-muted-foreground hover:text-foreground"
             asChild
           >
-            <a href={getAssetPath("/cv.pdf")} target="_blank" rel="noopener noreferrer">
+            <Link href="/cv">
               <FileText className="mr-2 h-4 w-4" />
-              Descargar CV
-            </a>
+              Ver CV Profesional
+            </Link>
           </Button>
         </div>
         <div className="mt-24 animate-bounce">
