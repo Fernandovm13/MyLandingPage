@@ -1,7 +1,10 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/MyLandingPage',
+  basePath: isProd ? '/MyLandingPage' : '',
+  assetPrefix: isProd ? '/MyLandingPage/' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
