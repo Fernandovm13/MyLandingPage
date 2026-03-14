@@ -119,8 +119,8 @@ export function Projects() {
             >
               {/* Project Image/Preview */}
               <div
-                className={`lg:col-span-7 ${
-                  index % 2 === 1 ? "lg:col-start-6" : ""
+                className={`lg:col-span-6 ${
+                  index % 2 === 1 ? "lg:col-start-7" : ""
                 } relative group`}
               >
                 <div className="relative aspect-video bg-secondary rounded-lg overflow-hidden border border-border">
@@ -140,8 +140,8 @@ export function Projects() {
               {/* Project Info */}
               <div
                 className={`lg:col-span-6 ${
-                  index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : "lg:col-start-6"
-                } relative z-10`}
+                  index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""
+                } relative`}
               >
                 <p className="font-mono text-primary text-sm mb-2">{project.role}</p>
                 <h3 className="text-2xl font-bold text-foreground mb-4">{project.title}</h3>
