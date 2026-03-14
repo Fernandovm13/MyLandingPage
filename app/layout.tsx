@@ -1,9 +1,17 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Silkscreen, Geist } from 'next/font/google'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const silkscreen = Silkscreen({ 
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-silkscreen',
+});
+
+const geist = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist',
+});
 
 export const metadata: Metadata = {
   title: "Fernando Vélez Méndez | Full Stack Developer & IoT Engineer",
@@ -34,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
+      <body className={`${silkscreen.variable} ${geist.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
