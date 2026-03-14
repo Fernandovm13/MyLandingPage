@@ -2,12 +2,12 @@
 const nextConfig = {
   output: 'export',
   basePath: '/MyLandingPage',
-  assetPrefix: '/MyLandingPage/', // Ensures assets like CSS/JS are prefixed
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  trailingSlash: true,
   images: {
     unoptimized: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 }
 

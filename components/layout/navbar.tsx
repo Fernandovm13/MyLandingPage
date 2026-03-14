@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
@@ -37,9 +38,9 @@ export function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
-          JP<span className="text-primary">.</span>
-        </a>
+        <Link href="/" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
+          FVM<span className="text-primary">.</span>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-1">
