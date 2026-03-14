@@ -7,15 +7,13 @@ export function cn(...inputs: ClassValue[]) {
 
 export function getAssetPath(path: string) {
   const isProd = process.env.NODE_ENV === 'production';
-  const basePath = '/MyLandingPage';
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   
-  if (!isProd) return path;
+  if (!isProd) return normalizedPath;
   if (path.startsWith('http')) return path;
   
-  // Ensure we don't double prefix if paths are already prefixed
-  if (path.startsWith(basePath)) return path;
+  const basePath = '/MyLandingPage';
+  if (normalizedPath.startsWith(basePath)) return normalizedPath;
   
-  // Ensure the path starts with /
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   return `${basePath}${normalizedPath}`;
 }
