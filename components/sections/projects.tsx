@@ -26,7 +26,6 @@ const projects = [
       { label: "Uptime", value: "99.9%" }
     ],
     image: "/assets/projects/iot-monitoring.jpg",
-    videoUrl: "https://www.youtube.com/embed/L5ITZ-yg2Rs",
     links: {
       github: "https://github.com/Fernandovm13/Esp32-sensores-Firebase",
     },
@@ -44,7 +43,6 @@ const projects = [
       { label: "Protocolo", value: "WS" }
     ],
     image: "/assets/projects/sensor-streaming.jpg",
-    videoUrl: "https://www.youtube.com/embed/YkbNhKgVnUA",
     links: {
       github: "https://github.com/Fernandovm13/websocket_sensores",
     },
@@ -62,7 +60,6 @@ const projects = [
       { label: "Type", value: "REST" }
     ],
     image: "/assets/projects/sensor-api.jpg",
-    videoUrl: "https://www.youtube.com/embed/6UUQdX7S1II",
     links: {
       github: "https://github.com/Fernandovm13/fastApi_sensors",
     },
@@ -107,7 +104,6 @@ const projects = [
 ]
 
 export function Projects() {
-  const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null)
   const featuredProjects = projects.filter((p) => p.featured)
   const otherProjects = projects.filter((p) => !p.featured)
 
@@ -142,13 +138,6 @@ export function Projects() {
                     onError={(e) => (e.currentTarget.style.display = 'none')}
                   />
                   <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-300" />
-                  
-                  {project.videoUrl && (
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 cursor-pointer" onClick={() => setSelectedVideo({ url: project.videoUrl!, title: project.title })}>
-                      <PlayCircle className="w-12 h-12 text-white drop-shadow-lg" />
-                    </div>
-                  )}
-
                   <div className="absolute inset-0 flex items-center justify-center -z-10">
                     <div className="text-4xl font-bold text-primary/20">{project.title.charAt(0)}</div>
                   </div>
@@ -191,16 +180,6 @@ export function Projects() {
                 </div>
 
                 <div className={`flex gap-3 ${index % 2 === 1 ? "lg:justify-end" : ""}`}>
-                  {project.videoUrl && (
-                    <Button 
-                      onClick={() => setSelectedVideo({ url: project.videoUrl!, title: project.title })}
-                      size="sm" 
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                    >
-                      <PlayCircle className="mr-2 h-4 w-4" />
-                      Ver Tutorial
-                    </Button>
-                  )}
                   {project.links?.github && (
                     <Button variant="outline" size="sm" className="border-border/50 hover:bg-primary/10" asChild>
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">
@@ -253,25 +232,6 @@ export function Projects() {
           ))}
         </div>
       </div>
-
-      <Dialog open={!!selectedVideo} onOpenChange={(open) => !open && setSelectedVideo(null)}>
-        <DialogContent className="max-w-4xl p-0 overflow-hidden bg-black border-none">
-          <DialogHeader className="p-4 absolute top-0 left-0 right-0 z-10 bg-gradient-to-b from-black/80 to-transparent">
-            <DialogTitle className="text-white font-bold">{selectedVideo?.title} - Tutorial</DialogTitle>
-          </DialogHeader>
-          <div className="aspect-video w-full mt-0">
-            {selectedVideo && (
-              <iframe
-                src={`${selectedVideo.url}?autoplay=1`}
-                title={selectedVideo.title}
-                className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            )}
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   )
 }
