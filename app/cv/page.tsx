@@ -39,10 +39,11 @@ export default function CVPage() {
           Descargar PDF
         </Button>
       </div>
-      <div className="max-w-[210mm] mx-auto bg-white shadow-2xl flex flex-col md:flex-row print:shadow-none print:w-full print:h-[297mm] print:overflow-hidden min-h-[297mm]">
+      {/* CV Paper Container */}
+      <div className="max-w-[210mm] mx-auto bg-white shadow-2xl flex flex-col md:flex-row print:flex-row print:shadow-none print:w-[210mm] print:h-[297mm] print:min-h-[297mm] min-h-[297mm]">
         
         {/* Sidebar (Left Column) */}
-        <aside className="w-full md:w-[260px] bg-[#32527b] text-white p-6 flex flex-col gap-6 print:w-[30%] print:h-full print:bg-[#32527b] print:text-white print:p-5 print:gap-5">
+        <aside className="w-full md:w-[260px] bg-[#32527b] text-white p-6 flex flex-col gap-6 print:w-[28%] print:h-full print:bg-[#32527b] print:text-white print:p-5 print:gap-5">
           {/* Header in Sidebar */}
           <div className="text-center flex flex-col items-center gap-3">
             <div className="w-32 h-32 rounded-full border-4 border-white/20 overflow-hidden bg-slate-200 relative mb-2">
@@ -105,7 +106,7 @@ export default function CVPage() {
         </aside>
 
         {/* Main Content (Right Column) */}
-        <main className="flex-1 p-8 flex flex-col gap-8 bg-white print:p-6 print:gap-6 print:h-full">
+        <main className="flex-1 p-8 flex flex-col gap-8 bg-white print:w-[72%] print:p-6 print:gap-6 print:h-full">
           
           {/* Section: Perfil */}
           <section className="print:break-inside-avoid">
@@ -222,10 +223,11 @@ export default function CVPage() {
             -webkit-print-color-adjust: exact; 
             margin: 0;
             padding: 0;
+            background: white !important;
           }
           .print-hidden { display: none !important; }
           @page {
-            size: A4;
+            size: A4 portrait;
             margin: 0;
           }
           nav, footer, .fixed, .sticky { display: none !important; }
