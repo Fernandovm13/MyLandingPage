@@ -17,7 +17,7 @@ const projects = [
       { label: "Sensores", value: "Multi-point" },
       { label: "Uptime", value: "99.9%" }
     ],
-    image: "assets/projects/iot-monitoring.jpg",
+    image: "/assets/projects/iot-monitoring.jpg",
     links: {
       github: "https://github.com/Fernandovm13/Esp32-sensores-Firebase",
     },
@@ -34,7 +34,7 @@ const projects = [
       { label: "Lenguaje", value: "Golang" },
       { label: "Protocolo", value: "WS" }
     ],
-    image: "assets/projects/sensor-streaming.jpg",
+    image: "/assets/projects/sensor-streaming.jpg",
     links: {
       github: "https://github.com/Fernandovm13/websocket_sensores",
     },
@@ -51,7 +51,7 @@ const projects = [
       { label: "Docs", value: "Swagger" },
       { label: "Type", value: "REST" }
     ],
-    image: "assets/projects/sensor-api.jpg",
+    image: "/assets/projects/sensor-api.jpg",
     links: {
       github: "https://github.com/Fernandovm13/fastApi_sensors",
     },
