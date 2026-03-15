@@ -9,21 +9,8 @@ export const metadata: Metadata = {
   title: "Fernando Vélez Méndez | Full Stack Developer & IoT Engineer",
   description: "Desarrollador Full Stack especializado en Angular, Node.js e IoT. Experto en integración de sensores y soluciones en la nube desde Tuxtla Gutiérrez, Chiapas.",
   icons: {
-    icon: [
-      {
-        url: '/MyLandingPage/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/MyLandingPage/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/MyLandingPage/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/MyLandingPage/apple-icon.png',
+    icon: '/MyLandingPage/favicon.png',
+    apple: '/MyLandingPage/favicon.png',
   },
 }
 
