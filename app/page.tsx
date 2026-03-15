@@ -107,7 +107,7 @@ export default function Home() {
           </p>
           <div className="flex gap-6">
             <a href="https://github.com/Fernandovm13" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/fernando-vélez-a521372a2/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/fernando-vélez-a521372a2" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a>
           </div>
         </div>
       </footer>

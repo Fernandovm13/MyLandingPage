@@ -76,7 +76,7 @@ export function Contact() {
             {/* Social Links */}
             <div className="flex gap-4">
               <Button variant="outline" size="lg" className="flex-1 border-border/50 hover:border-primary/50 hover:bg-primary/10" asChild>
-                <a href="https://linkedin.com/in/fernandovm" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/fernando-vélez-a521372a2" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
